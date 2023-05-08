@@ -10,7 +10,7 @@
         android:layout_marginTop="24dp"
         android:id="@+id/im_splash"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="500dp"
         android:src="@drawable/first_splash" />
 
     <TextView
