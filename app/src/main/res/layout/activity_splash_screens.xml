@@ -4,42 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Splash_screens">
+    tools:context=".SplashScreens">
 
     <ImageView
-        android:layout_marginTop="24dp"
         android:id="@+id/im_splash"
-        android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_width="wrap_content"
+        android:layout_height="480dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="24dp"
         android:src="@drawable/first_splash" />
 
     <TextView
+        android:id="@+id/tvSplash"
+        style="@style/Widget.Material3.MaterialDivider.Heavy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#313140"
-        android:textSize="32sp"
-        android:layout_margin="18dp"
-        android:id="@+id/tv2"
-        style="@style/Widget.Material3.MaterialDivider.Heavy"
         android:layout_below="@+id/im_splash"
-        android:text="Finding jobs that \nsuits your experience"/>
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:text="Finding jobs that \nsuits your experience"
+        android:textColor="#313140"
+        android:textSize="32sp" />
 
     <ImageButton
         android:id="@+id/btn_next"
-        android:backgroundTint="@null"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_margin="8dp"
+        android:background="@null"
+        android:layout_margin="12dp"
         android:src="@drawable/next" />
+
     <ImageView
-        android:layout_marginTop="24dp"
-        android:layout_margin="8dp"
+        android:id="@+id/belowImage"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
         android:src="@drawable/first_page" />
 
 </RelativeLayout>

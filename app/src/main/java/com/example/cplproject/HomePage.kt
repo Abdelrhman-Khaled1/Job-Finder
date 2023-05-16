@@ -3,9 +3,9 @@ package com.example.cplproject
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class Splash_screens : AppCompatActivity() {
+class HomePage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash_screens)
+        setContentView(R.layout.activity_home_page)
     }
 }

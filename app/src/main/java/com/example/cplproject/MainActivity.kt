@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.google.firebase.database.FirebaseDatabase
 
 
 class MainActivity : AppCompatActivity() {
@@ -14,13 +13,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         btn = findViewById(R.id.btn)
-        val database = FirebaseDatabase.getInstance()
-        val myRef = database.getReference("message")
+//        val database = FirebaseDatabase.getInstance()
+//        val myRef = database.getReference("message")
+//
+//        myRef.setValue("Hello, World!")
 
-        myRef.setValue("Hello, World!")
-        
         btn.setOnClickListener(View.OnClickListener {
-            val intent = Intent(this, Splash_screens::class.java)
+            val intent = Intent(this, SplashScreens::class.java)
             startActivity(intent)
             finish()
         })
